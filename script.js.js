@@ -1,15 +1,9 @@
-const toggle = document.getElementById("theme-toggle");
+document
+.getElementById("contactForm")
+.addEventListener("submit",function(e){
 
-toggle.addEventListener("click", () => {
-    document.body.classList.toggle("dark-mode");
-});
+e.preventDefault();
 
-const form = document.getElementById("contact-form");
+alert("Thanks for your message! 🌲");
 
-form.addEventListener("submit", function(e) {
-    e.preventDefault();
-
-    alert("Thanks for your message! 🌿");
-
-    form.reset();
 });
