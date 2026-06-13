@@ -570,6 +570,18 @@ footer {
 
         grid-template-columns: 1fr;
 
+        .divider {
+
+    height: 80px;
+
+    background-image: url("images/paper-divider.png");
+
+    background-repeat: repeat-x;
+
+    background-size: cover;
+
+}
+
     }
 
 }
