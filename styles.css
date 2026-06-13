@@ -1,9 +1,15 @@
+/* --------------------- */
+/* TRAILS WITH TIA       */
+/* --------------------- */
+
 :root {
-    --green: #2F5D50;
-    --sage: #A8C3A0;
-    --cream: #F7F3E9;
-    --beige: #DCCFB8;
-    --dark: #2E2E2E;
+
+    --cream: #E5D7C4;
+    --sand: #CFBB99;
+    --sage: #889063;
+    --forest: #354024;
+    --earth: #4C3D19;
+
 }
 
 * {
@@ -13,194 +19,551 @@
 }
 
 html {
+
     scroll-behavior: smooth;
+
 }
 
 body {
-    font-family: 'Poppins', sans-serif;
+
     background: var(--cream);
-    color: var(--dark);
-    line-height: 1.6;
+
+    color: var(--earth);
+
+    font-family: 'Montserrat', sans-serif;
+
+    line-height: 1.8;
+
 }
+
+/* --------------------- */
+/* HEADER */
+/* --------------------- */
 
 header {
-    background: white;
-    padding: 20px 10%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    position: sticky;
+
+    position: fixed;
+
     top: 0;
+
+    width: 100%;
+
+    padding: 20px 8%;
+
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+
+    background: rgba(53,64,36,.90);
+
+    backdrop-filter: blur(8px);
+
     z-index: 1000;
-    box-shadow: 0 2px 10px rgba(0,0,0,.08);
+
 }
 
-.logo {
-    font-weight: 700;
-    font-size: 1.2rem;
+.logo-text {
+
+    color: white;
+
+    font-family: 'Cormorant Garamond', serif;
+
+    font-size: 2rem;
+
+    letter-spacing: 2px;
+
 }
 
 nav a {
+
+    color: white;
+
     text-decoration: none;
-    color: var(--dark);
-    margin-left: 20px;
-    font-weight: 500;
+
+    margin-left: 30px;
+
+    transition: .3s;
+
 }
+
+nav a:hover {
+
+    color: var(--sand);
+
+}
+
+/* --------------------- */
+/* HERO */
+/* --------------------- */
 
 .hero {
-    height: 90vh;
-    background:
-        linear-gradient(rgba(0,0,0,.35), rgba(0,0,0,.35)),
-        url("https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?auto=format&fit=crop&w=1600&q=80");
+
+    height: 100vh;
+
+    background-image:
+    linear-gradient(
+        rgba(0,0,0,.45),
+        rgba(0,0,0,.45)
+    ),
+    url("images/hero.jpg");
+
     background-size: cover;
+
     background-position: center;
+
     display: flex;
-    align-items: center;
+
     justify-content: center;
+
+    align-items: center;
+
+    text-align: center;
+
+    color: white;
+
+    padding: 20px;
+
 }
 
-.hero-content {
-    text-align: center;
-    color: white;
-    max-width: 700px;
+.hero-logo {
+
+    width: 180px;
+
+    margin-bottom: 25px;
+
 }
 
 .hero h1 {
-    font-size: 4rem;
+
+    font-family: 'Cormorant Garamond', serif;
+
+    font-size: 5rem;
+
+    letter-spacing: 5px;
+
 }
 
-.hero p {
-    margin: 20px 0;
-    font-size: 1.2rem;
+.hero-subtitle {
+
+    margin-top: 20px;
+
+    text-transform: uppercase;
+
+    letter-spacing: 3px;
+
 }
 
-.btn {
+.hero-text {
+
+    max-width: 700px;
+
+    margin: 25px auto;
+
+}
+
+.hero-button {
+
+    display: inline-block;
+
+    margin-top: 20px;
+
     background: var(--sage);
+
     color: white;
+
     text-decoration: none;
-    padding: 14px 30px;
-    border-radius: 30px;
+
+    padding: 15px 35px;
+
+    border-radius: 50px;
+
+    transition: .3s;
+
 }
 
-.section {
-    padding: 80px 10%;
+.hero-button:hover {
+
+    background: var(--forest);
+
 }
 
-.section h2 {
-    margin-bottom: 30px;
-    color: var(--green);
+/* --------------------- */
+/* ABOUT */
+/* --------------------- */
+
+.about {
+
+    display: grid;
+
+    grid-template-columns: 1fr 1fr;
+
+    gap: 60px;
+
+    padding: 100px 10%;
+
+    align-items: center;
+
+}
+
+.about-image img {
+
+    width: 100%;
+
+    border-radius: 20px;
+
+    box-shadow: 0 15px 40px rgba(0,0,0,.15);
+
+}
+
+.small-title {
+
+    color: var(--sage);
+
+    letter-spacing: 3px;
+
+    font-size: .8rem;
+
+}
+
+.about h2 {
+
+    font-family: 'Cormorant Garamond', serif;
+
+    font-size: 3rem;
+
+    margin: 15px 0;
+
+}
+
+.about p {
+
+    margin-bottom: 20px;
+
+}
+
+/* --------------------- */
+/* EXPEDITION */
+/* --------------------- */
+
+.expedition {
+
+    background: var(--forest);
+
+    color: white;
+
+    padding: 100px 10%;
+
+    text-align: center;
+
+}
+
+.expedition h2 {
+
+    font-family: 'Cormorant Garamond', serif;
+
+    font-size: 3rem;
+
+}
+
+.expedition-title {
+
+    margin-top: 15px;
+
+    margin-bottom: 50px;
+
+    color: var(--sand);
+
 }
 
 .stats {
+
     display: grid;
+
     grid-template-columns: repeat(auto-fit,minmax(200px,1fr));
-    gap: 20px;
-    padding: 60px 10%;
+
+    gap: 25px;
+
 }
 
-.stat-card {
-    background: white;
+.stat-box {
+
+    background: rgba(255,255,255,.08);
+
     padding: 30px;
+
+    border-radius: 15px;
+
+}
+
+.stat-box h3 {
+
+    font-size: 3rem;
+
+    color: var(--sand);
+
+}
+
+/* --------------------- */
+/* JOURNAL */
+/* --------------------- */
+
+.journal {
+
+    padding: 100px 10%;
+
+}
+
+.journal h2 {
+
     text-align: center;
-    border-radius: 15px;
+
+    font-family: 'Cormorant Garamond', serif;
+
+    font-size: 3rem;
+
+    margin-bottom: 50px;
+
 }
 
-.blog-grid {
+.journal-grid {
+
     display: grid;
-    grid-template-columns: repeat(auto-fit,minmax(280px,1fr));
-    gap: 20px;
+
+    grid-template-columns: repeat(auto-fit,minmax(300px,1fr));
+
+    gap: 30px;
+
 }
 
-.blog-card {
+.journal-card {
+
     background: white;
-    padding: 25px;
-    border-radius: 15px;
+
+    border-radius: 20px;
+
+    overflow: hidden;
+
+    box-shadow: 0 10px 30px rgba(0,0,0,.08);
+
     transition: .3s;
+
 }
 
-.blog-card:hover {
-    transform: translateY(-5px);
+.journal-card:hover {
+
+    transform: translateY(-10px);
+
 }
 
-.blog-card button {
-    margin-top: 15px;
-    border: none;
-    background: var(--green);
-    color: white;
-    padding: 10px 18px;
-    border-radius: 8px;
-    cursor: pointer;
+.journal-card img {
+
+    width: 100%;
+
+    height: 250px;
+
+    object-fit: cover;
+
+}
+
+.journal-card h3 {
+
+    padding: 20px 20px 10px;
+
+}
+
+.journal-card p {
+
+    padding: 0 20px 25px;
+
+}
+
+/* --------------------- */
+/* GALLERY */
+/* --------------------- */
+
+.gallery {
+
+    background: var(--sand);
+
+    padding: 100px 10%;
+
+}
+
+.gallery h2 {
+
+    text-align: center;
+
+    font-family: 'Cormorant Garamond', serif;
+
+    font-size: 3rem;
+
+    margin-bottom: 50px;
+
 }
 
 .gallery-grid {
+
     display: grid;
-    grid-template-columns: repeat(auto-fit,minmax(250px,1fr));
-    gap: 15px;
+
+    grid-template-columns: repeat(auto-fit,minmax(280px,1fr));
+
+    gap: 20px;
+
 }
 
 .gallery-grid img {
+
     width: 100%;
-    height: 250px;
+
+    height: 350px;
+
     object-fit: cover;
+
     border-radius: 15px;
+
     transition: .3s;
+
 }
 
 .gallery-grid img:hover {
+
     transform: scale(1.03);
+
+}
+
+/* --------------------- */
+/* CONTACT */
+/* --------------------- */
+
+.contact {
+
+    padding: 100px 10%;
+
+    text-align: center;
+
+}
+
+.contact h2 {
+
+    font-family: 'Cormorant Garamond', serif;
+
+    font-size: 3rem;
+
+    margin-bottom: 20px;
+
 }
 
 form {
+
     max-width: 600px;
+
+    margin: 40px auto;
+
 }
 
 input,
 textarea {
+
     width: 100%;
-    padding: 15px;
-    margin-bottom: 15px;
-    border-radius: 10px;
-    border: 1px solid #ddd;
+
+    padding: 18px;
+
+    margin-bottom: 20px;
+
+    border: none;
+
+    border-radius: 12px;
+
+    font-family: inherit;
+
 }
 
 textarea {
-    min-height: 150px;
+
+    height: 180px;
+
 }
 
-form button {
-    background: var(--green);
+button {
+
+    background: var(--forest);
+
     color: white;
+
+    padding: 15px 35px;
+
     border: none;
-    padding: 14px 25px;
-    border-radius: 10px;
+
+    border-radius: 50px;
+
     cursor: pointer;
+
+    transition: .3s;
+
 }
+
+button:hover {
+
+    background: var(--sage);
+
+}
+
+/* --------------------- */
+/* FOOTER */
+/* --------------------- */
 
 footer {
-    background: var(--green);
+
+    background: var(--earth);
+
     color: white;
+
     text-align: center;
-    padding: 25px;
+
+    padding: 50px 20px;
+
 }
 
-.dark-mode {
-    background: #1f1f1f;
-    color: white;
+.footer-logo {
+
+    width: 100px;
+
+    margin-bottom: 20px;
+
 }
 
-.dark-mode header,
-.dark-mode .blog-card,
-.dark-mode .stat-card {
-    background: #2d2d2d;
-}
+/* --------------------- */
+/* MOBILE */
+/* --------------------- */
 
-.dark-mode nav a {
-    color: white;
-}
+@media (max-width: 900px) {
 
-#theme-toggle {
-    border: none;
-    background: transparent;
-    font-size: 1.2rem;
-    cursor: pointer;
+    header {
+
+        flex-direction: column;
+
+        gap: 20px;
+
+    }
+
+    nav a {
+
+        margin: 0 10px;
+
+    }
+
+    .hero h1 {
+
+        font-size: 3rem;
+
+    }
+
+    .about {
+
+        grid-template-columns: 1fr;
+
+    }
+
 }

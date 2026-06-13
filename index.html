@@ -1,135 +1,303 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
+
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <title>Trails with Tia</title>
 
     <link rel="stylesheet" href="styles.css">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;600;700&family=Montserrat:wght@300;400;500;600&display=swap" rel="stylesheet">
+
 </head>
+
 <body>
 
-<header>
-    <div class="logo">🌿 Trails with Tia</div>
+    <!-- Navigation -->
 
-    <nav>
-        <a href="#home">Home</a>
-        <a href="#about">About Me</a>
-        <a href="#blog">Blog</a>
-        <a href="#gallery">Gallery</a>
-        <a href="#contact">Contact</a>
-    </nav>
+    <header>
 
-    <button id="theme-toggle">🌙</button>
-</header>
+        <div class="logo-text">
+            TRAILS WITH TIA
+        </div>
 
-<section id="home" class="hero">
-    <div class="hero-content">
-        <h1>Trails with Tia</h1>
-        <p>Hiking adventures, ultramarathon training, and exploring the outdoors one mile at a time.</p>
+        <nav>
 
-        <a href="#blog" class="btn">Read My Adventures</a>
-    </div>
-</section>
+            <a href="#home">Home</a>
+            <a href="#about">About</a>
+            <a href="#journal">Journal</a>
+            <a href="#gallery">Gallery</a>
+            <a href="#contact">Contact</a>
 
-<section class="stats">
-    <div class="stat-card">
-        <h2>500+</h2>
-        <p>Miles Hiked</p>
-    </div>
+        </nav>
 
-    <div class="stat-card">
-        <h2>20</h2>
-        <p>Longest Hike (Miles)</p>
-    </div>
+    </header>
 
-    <div class="stat-card">
-        <h2>1</h2>
-        <p>Ultra in Training</p>
-    </div>
-</section>
+    <!-- Hero -->
 
-<section id="about" class="section">
-    <h2>About Me</h2>
+    <section id="home" class="hero">
 
-    <p>
-        Hi, I'm Tia.
-    </p>
+        <div class="hero-content">
 
-    <p>
-        Based in Cheshire, I spend my weekends exploring trails,
-        hiking long distances and training for ultramarathons.
-    </p>
+            <img src="images/logo.png"
+                alt="Trails with Tia Logo"
+                class="hero-logo">
 
-    <p>
-        This blog is where I share hiking routes, race preparation,
-        training updates, gear reviews and outdoor adventures.
-    </p>
-</section>
+            <h1>TRAILS WITH TIA</h1>
 
-<section id="blog" class="section">
-    <h2>Latest Blog Posts</h2>
+            <p class="hero-subtitle">
+                Hiking • Trail Running • Adventure
+            </p>
 
-    <div class="blog-grid">
+            <p class="hero-text">
 
-        <article class="blog-card">
-            <h3>Training for My First 47-Mile Ultramarathon</h3>
-            <p>How I'm preparing physically and mentally for race day.</p>
-            <button>Read More</button>
-        </article>
+                Exploring trails, chasing summits and
+                documenting the journey towards ultramarathons.
 
-        <article class="blog-card">
-            <h3>My Favourite Cheshire Walks</h3>
-            <p>Beautiful local routes perfect for a weekend adventure.</p>
-            <button>Read More</button>
-        </article>
+            </p>
 
-        <article class="blog-card">
-            <h3>What I Eat During Long Hikes</h3>
-            <p>Fuel strategies, snacks and lessons learned.</p>
-            <button>Read More</button>
-        </article>
+            <a href="#journal" class="hero-button">
 
-    </div>
-</section>
+                Read The Journal →
 
-<section id="gallery" class="section">
-    <h2>Adventure Gallery</h2>
+            </a>
 
-    <div class="gallery-grid">
+        </div>
 
-        <img src="https://picsum.photos/400?1" alt="">
-        <img src="https://picsum.photos/400?2" alt="">
-        <img src="https://picsum.photos/400?3" alt="">
-        <img src="https://picsum.photos/400?4" alt="">
-        <img src="https://picsum.photos/400?5" alt="">
-        <img src="https://picsum.photos/400?6" alt="">
+    </section>
 
-    </div>
-</section>
+    <!-- About -->
 
-<section id="contact" class="section">
-    <h2>Get In Touch</h2>
+    <section id="about" class="about">
 
-    <form id="contact-form">
-        <input type="text" placeholder="Your Name" required>
+        <div class="about-image">
 
-        <input type="email" placeholder="Your Email" required>
+            <img src="images/tia-profile.jpg"
+                alt="Tia Hiking">
 
-        <textarea placeholder="Your Message" required></textarea>
+        </div>
 
-        <button type="submit">Send Message</button>
-    </form>
-</section>
+        <div class="about-text">
 
-<footer>
-    <p>© 2026 Trails with Tia | One More Mile 🌿</p>
-</footer>
+            <span class="small-title">
 
-<script src="script.js"></script>
+                MEET THE EXPLORER
+
+            </span>
+
+            <h2>Hi, I'm Tia.</h2>
+
+            <p>
+
+                Office worker during the week,
+                trail runner and hiker every chance I get.
+
+            </p>
+
+            <p>
+
+                This website is my adventure journal,
+                sharing hikes, races, training,
+                favourite places and the road
+                towards ultramarathons.
+
+            </p>
+
+        </div>
+
+    </section>
+
+    <!-- Expedition -->
+
+    <section class="expedition">
+
+        <h2>Current Expedition</h2>
+
+        <p class="expedition-title">
+
+            47-Mile Ultramarathon
+
+        </p>
+
+        <div class="stats">
+
+            <div class="stat-box">
+
+                <h3>11</h3>
+
+                <p>Weeks Remaining</p>
+
+            </div>
+
+            <div class="stat-box">
+
+                <h3>20</h3>
+
+                <p>Longest Hike</p>
+
+            </div>
+
+            <div class="stat-box">
+
+                <h3>10K</h3>
+
+                <p>Current Run</p>
+
+            </div>
+
+            <div class="stat-box">
+
+                <h3>47</h3>
+
+                <p>Race Miles</p>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- Journal -->
+
+    <section id="journal" class="journal">
+
+        <h2>Trail Journal</h2>
+
+        <div class="journal-grid">
+
+            <div class="journal-card">
+
+                <img src="images/lake-district.jpg"
+                    alt="Lake District">
+
+                <h3>Lake District Adventures</h3>
+
+                <p>
+
+                    Exploring mountains,
+                    ridges and wild places.
+
+                </p>
+
+            </div>
+
+            <div class="journal-card">
+
+                <img src="images/trail-running.jpg"
+                    alt="Trail Running">
+
+                <h3>Ultra Training</h3>
+
+                <p>
+
+                    Weekly updates from the journey
+                    towards 47 miles.
+
+                </p>
+
+            </div>
+
+            <div class="journal-card">
+
+                <img src="images/peak-district.jpg"
+                    alt="Peak District">
+
+                <h3>Peak District Walks</h3>
+
+                <p>
+
+                    Favourite local trails
+                    and hidden gems.
+
+                </p>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- Gallery -->
+
+    <section id="gallery" class="gallery">
+
+        <h2>Adventure Gallery</h2>
+
+        <div class="gallery-grid">
+
+            <img src="images/tia-profile.jpg" alt="">
+            <img src="images/lake-district.jpg" alt="">
+            <img src="images/trail-running.jpg" alt="">
+            <img src="images/peak-district.jpg" alt="">
+
+        </div>
+
+    </section>
+
+    <!-- Contact -->
+
+    <section id="contact" class="contact">
+
+        <h2>Get In Touch</h2>
+
+        <p>
+
+            Follow the adventures,
+            share recommendations,
+            or simply say hello.
+
+        </p>
+
+        <form>
+
+            <input type="text"
+                placeholder="Your Name">
+
+            <input type="email"
+                placeholder="Your Email">
+
+            <textarea
+                placeholder="Your Message"></textarea>
+
+            <button>
+
+                Send Message
+
+            </button>
+
+        </form>
+
+    </section>
+
+    <!-- Footer -->
+
+    <footer>
+
+        <img src="images/logo.png"
+            class="footer-logo"
+            alt="">
+
+        <p>
+
+            Trails with Tia
+
+        </p>
+
+        <p>
+
+            Hiking • Trail Running • Adventure
+
+        </p>
+
+    </footer>
+
+    <script src="script.js"></script>
 
 </body>
+
 </html>
