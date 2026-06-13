@@ -7,8 +7,60 @@ header{position:fixed;width:100%;display:flex;justify-content:space-between;padd
 .logo-text,nav a{color:white;text-decoration:none}
 nav a{margin-left:25px}
 nav a:hover{color:var(--sand)}
-.hero{height:100vh;background:linear-gradient(rgba(0,0,0,.45),rgba(0,0,0,.45)),url("images/hero.jpg");background-size:cover;background-position:center;display:flex;justify-content:center;align-items:center;text-align:center;color:white;animation:zoomHero 20s ease-in-out infinite alternate}
-.hero-logo{width:180px;margin-bottom:20px}
+.hero{
+
+    min-height:100vh;
+
+    background-image:
+    linear-gradient(
+    rgba(0,0,0,.45),
+    rgba(0,0,0,.45)),
+    url("images/hero.jpg");
+
+    background-size:cover;
+
+    background-position:center;
+
+    background-repeat:no-repeat;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    text-align:center;
+
+    color:white;
+
+    padding:100px 20px;
+
+    animation:zoomHero 20s ease-in-out infinite alternate;
+
+}
+.hero-content{
+
+    max-width:800px;
+
+}
+
+.hero-subtitle{
+
+    margin:20px 0;
+
+    letter-spacing:3px;
+
+    text-transform:uppercase;
+
+}
+
+.hero p{
+
+    max-width:650px;
+
+    margin:20px auto;
+
+}
 .hero h1,.featured h2,.about h2,.journal h2,.contact h2,.expedition h2{font-family:"Cormorant Garamond",serif}
 .hero h1{font-size:5rem}
 .hero-button{display:inline-block;margin-top:20px;background:var(--sage);padding:15px 30px;border-radius:40px;color:white;text-decoration:none}
