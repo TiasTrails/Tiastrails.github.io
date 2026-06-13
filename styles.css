@@ -113,17 +113,23 @@ nav a:hover {
 
     background-position: center;
 
-    display: flex;
+    animation: zoomHero 20s ease-in-out infinite alternate;
 
-    justify-content: center;
+}
 
-    align-items: center;
+@keyframes zoomHero {
 
-    text-align: center;
+    from {
 
-    color: white;
+        background-size: 100%;
 
-    padding: 20px;
+    }
+
+    to {
+
+        background-size: 110%;
+
+    }
 
 }
 
